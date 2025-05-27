@@ -1,0 +1,302 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo */
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: #fffdf9;
+  color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(90deg, #FF7A3C, #FF9B61);
+  color: white;
+  padding: 25px 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+header h1 {
+  font-size: 2.3em;
+}
+
+header p {
+  margin-top: 5px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px 20px;
+}
+
+/* Card dos Itens */
+.item {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  width: 260px;
+  padding: 18px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.item img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.item h2 {
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+}
+
+.item p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.item span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #E5521E;
+}
+
+/* Quantidade */
+.quantity-controls {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-btn {
+  background: #FF7A3C;
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.qty-btn:hover {
+  background: #E5521E;
+}
+
+.qty-input {
+  width: 45px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+/* Botão adicionar */
+.add-to-cart {
+  background: #FF7A3C;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: #E5521E;
+}
+
+/* Carrinho */
+#cart {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background: white;
+  border-radius: 16px;
+  width: 350px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+#cart.active {
+  display: flex;
+}
+
+#cart h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #FF7A3C;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  flex: 1;
+}
+
+.cart-item-qty {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-qty-btn {
+  background: #FF7A3C;
+  border: none;
+  color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-qty-btn:hover {
+  background: #E5521E;
+}
+
+.cart-item-price {
+  margin-left: 10px;
+  font-weight: 600;
+  color: #E5521E;
+  white-space: nowrap;
+}
+
+#cart-total {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: 10px;
+  text-align: right;
+  color: #E5521E;
+}
+
+/* Finalizar pedido */
+#finalize-order {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1em;
+  border-radius: 12px;
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#finalize-order:hover {
+  background: #128C4A;
+}
+
+/* Botões flutuantes */
+#whatsapp-float, #cart-button {
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 10000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#whatsapp-float {
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+}
+
+#whatsapp-float:hover {
+  background: #128C4A;
+}
+
+#whatsapp-float img {
+  width: 38px;
+  height: 38px;
+}
+
+#cart-button {
+  bottom: 100px;
+  right: 25px;
+  background: #FF7A3C;
+}
+
+#cart-button:hover {
+  background: #E5521E;
+}
+
+#cart-button img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Bolinha quantidade */
+#cart-count {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #25D366;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+header {
+  background: url(burguer.jpeg) no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+

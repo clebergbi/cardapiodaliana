@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delícias da Liana - Cardápio Completo com Carrinho</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+
+
+<body>
+
+  <header>
+    <h1>Delícias da Liana</h1>
+    <p>Sabores que conquistam!</p>
+  </header>
+
+  <main class="menu">
+
+    <!-- Produtos diversos -->
+         <section class="item" data-name="Coxinha de Frango" data-price="5.00">
+      <img src="coxinhadefrango.jpg"  alt="Coxinha de Frango" />
+      <h2>Coxinha de Frango</h2>
+      <span>R$ 5,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Sem Katchup"> Sem Catupiry</label>
+        <label><input type="checkbox" value="Com Katchup"> Com Catupiry</label>
+        <label><input type="checkbox" value="Molho à parte"> Molho à parte</label>
+      </div>
+      <textarea placeholder="Outras Observações (ex.: tirar pimenta, sem catupry...)"></textarea>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+    <section class="item" data-name="Pimenta Cremosa" data-price="10.00">
+      <img src="pimentacremosa.jpeg" alt="Pimenta cremosa" />
+      <h2>Pimenta cremosa 🌶️</h2>
+      <p>Pote</p>
+      <span>R$ 10,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Mel de Abelha 250ml" data-price="9.00">
+      <img src="meldeabelha.jpeg" alt="Mel de abelha" />
+      <h2>Mel de Abelha 250ml</h2>
+      <span>R$ 9,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Pimenta Verde Cremosa" data-price="10.00">
+      <img src="pimentacremosaverde.jpeg" alt="Pimenta Verde Cremosa" />
+      <h2>Pimenta Verde Cremosa</h2>
+      <span>R$ 10,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Cachorro Quente Assado" data-price="5.00">
+      <img src="cachorroquenteassado.jpeg" alt="Cachorro Quente Assado" />
+      <h2>Cachorro Quente Assado</h2>
+      <span>R$ 5,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Sem Katchup"> Sem Katchup</label>
+        <label><input type="checkbox" value="Com Katchup"> Com Katchup</label>
+        <label><input type="checkbox" value="Sem cebola"> Sem cebola</label>
+        <label><input type="checkbox" value="Com cebola"> Com cebola</label>
+        <label><input type="checkbox" value="Sem alface"> Sem alface</label>
+        <label><input type="checkbox" value="Com alface"> Com alface</label>
+        <label><input type="checkbox" value="Sem tomate"> Sem tomate</label>
+        <label><input type="checkbox" value="Com tomate"> Com tomate</label>
+        <label><input type="checkbox" value="Molho à parte"> Molho à parte</label>
+      </div>
+      <textarea placeholder="Outras Observações (ex.: tirar pimenta, ponto da carne...)"></textarea>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <!-- Lanches -->
+    <section class="item" data-name="Burguer Bovino (simples)" data-price="8.00">
+      <img src="burguer1.jpeg" alt="Burguer Bovino" />
+      <h2>Burguer Bovino (simples)</h2>
+      <span>R$ 8,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Sem Katchup"> Sem Katchup</label>
+        <label><input type="checkbox" value="Com Katchup"> Com Katchup</label>
+        <label><input type="checkbox" value="Sem cebola"> Sem cebola</label>
+        <label><input type="checkbox" value="Com cebola"> Com cebola</label>
+        <label><input type="checkbox" value="Sem alface"> Sem alface</label>
+        <label><input type="checkbox" value="Com alface"> Com alface</label>
+        <label><input type="checkbox" value="Sem tomate"> Sem tomate</label>
+        <label><input type="checkbox" value="Com tomate"> Com tomate</label>
+        <label><input type="checkbox" value="Molho à parte"> Molho à parte</label>
+      </div>
+      <textarea placeholder="Outras Observações (ex.: tirar pimenta, ponto da carne...)"></textarea>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Burguer Bovino (completo)" data-price="12.00">
+      <img src="burguer1.jpeg" alt="Burguer Bovino completo" />
+      <h2>Burguer Bovino (completo)</h2>
+      <span>R$ 12,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Sem Katchup"> Sem Katchup</label>
+        <label><input type="checkbox" value="Com Katchup"> Com Katchup</label>
+        <label><input type="checkbox" value="Sem cebola"> Sem cebola</label>
+        <label><input type="checkbox" value="Com cebola"> Com cebola</label>
+        <label><input type="checkbox" value="Sem alface"> Sem alface</label>
+        <label><input type="checkbox" value="Com alface"> Com alface</label>
+        <label><input type="checkbox" value="Sem tomate"> Sem tomate</label>
+        <label><input type="checkbox" value="Com tomate"> Com tomate</label>
+        <label><input type="checkbox" value="Molho à parte"> Molho à parte</label>
+      </div>
+      <textarea placeholder="Outras Observações (ex.: tirar pimenta, ponto da carne...)"></textarea>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="X-Burguer Bovino" data-price="14.00">
+      <img src="burguer.jpeg" alt="X-Burguer Bovino" />
+      <h2>X-Burguer Bovino</h2>
+      <span>R$ 14,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Sem Katchup"> Sem Katchup</label>
+        <label><input type="checkbox" value="Com Katchup"> Com Katchup</label>
+        <label><input type="checkbox" value="Sem cebola"> Sem cebola</label>
+        <label><input type="checkbox" value="Com cebola"> Com cebola</label>
+        <label><input type="checkbox" value="Sem alface"> Sem alface</label>
+        <label><input type="checkbox" value="Com alface"> Com alface</label>
+        <label><input type="checkbox" value="Sem tomate"> Sem tomate</label>
+        <label><input type="checkbox" value="Com tomate"> Com tomate</label>
+        <label><input type="checkbox" value="Molho à parte"> Molho à parte</label>
+      </div>
+      <textarea placeholder="Outras Observações (ex.: tirar pimenta, ponto da carne...)"></textarea>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="X-Frango" data-price="14.00">
+      <img src="burguer1.jpeg" alt="X-Frango" />
+      <h2>X-Frango</h2>
+      <span>R$ 14,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Sem Katchup"> Sem Katchup</label>
+        <label><input type="checkbox" value="Com Katchup"> Com Katchup</label>
+        <label><input type="checkbox" value="Sem cebola"> Sem cebola</label>
+        <label><input type="checkbox" value="Com cebola"> Com cebola</label>
+        <label><input type="checkbox" value="Sem alface"> Sem alface</label>
+        <label><input type="checkbox" value="Com alface"> Com alface</label>
+        <label><input type="checkbox" value="Sem tomate"> Sem tomate</label>
+        <label><input type="checkbox" value="Com tomate"> Com tomate</label>
+        <label><input type="checkbox" value="Molho à parte"> Molho à parte</label>
+      </div>
+      <textarea placeholder="Outras Observações (ex.: tirar pimenta, ponto da carne...)"></textarea>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <!-- Doces -->
+    <section class="item" data-name="Picolé 45ml" data-price="3.00">
+      <img src="picole..jpeg" alt="Picolé 45ml" />
+      <h2>Picolé 45ml</h2>
+      <p>Sabores: Ninho trufado, Morango...</p>
+      <span>R$ 3,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Abacaxi"> Abacaxi</label>
+        <label><input type="checkbox" value="Uva"> Uva</label>
+        <label><input type="checkbox" value="Abacate"> Abacate</label>
+        <label><input type="checkbox" value="Acerola"> Acerola</label>
+        <label><input type="checkbox" value="Ninho Trufado"> Ninho Trufado</label>
+        <label><input type="checkbox" value="Maracujina"> Maracujina</label>
+        <label><input type="checkbox" value="Limão"> Limão</label>
+        <label><input type="checkbox" value="Laranja"> Laranja</label>
+        <label><input type="checkbox" value="Cocolate"> Cocolate</label>
+      </div>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Bolinho de Maizena" data-price="8.00">
+      <img src="bolinhodemaizena.jpeg" alt="Bolinho de Maizena" />
+      <h2>Bolinho de Maizena</h2>
+      <p>1 bandeja</p>
+      <span>R$ 8,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Normal"> Normal</label>
+        <label><input type="checkbox" value="Integral"> Integral</label>
+      </div>
+      <textarea placeholder="Outras Observações (ex.: Quero o bolinho integral...)"></textarea>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Bolinho doce" data-price="4.50">
+      <img src="bolinhodoce.jpeg" alt="Bolinho Doce" />
+      <h2>Bolinho doce</h2>
+      <p>1 pacote</p>
+      <span>R$ 4,50</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Normal"> Normal</label>
+        <label><input type="checkbox" value="Integral"> Integral</label>
+      </div>
+      <textarea placeholder="Outras Observações (ex.: Quero o bolinho integral...)"></textarea>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <!-- Outros -->
+    <section class="item" data-name="Tempero Verde" data-price="6.00">
+      <img src="temperoverde.jpeg" alt="Tempero Verde" />
+      <h2>Tempero Verde</h2>
+      <p>250 ml</p>
+      <span>R$ 6,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Chiringa (Avoador)" data-price="3.50">
+      <img src="chiringa.jpeg" alt="Chiringa (Avoador)" />
+      <h2>Chiringa (Avoador)</h2>
+      <p>1 pacote</p>
+      <span>R$ 3,50</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Pastel Assado" data-price="5.00">
+      <img src="pastel.jpeg" alt="Pastel Assado" />
+      <h2>Pastel Assado</h2>
+      <span>R$ 5,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Sem Katchup"> Sem Katchup</label>
+        <label><input type="checkbox" value="Com Katchup"> Com Katchup</label>
+        <label><input type="checkbox" value="Sem cebola"> Sem cebola</label>
+        <label><input type="checkbox" value="Com cebola"> Com cebola</label>
+        <label><input type="checkbox" value="Sem alface"> Sem alface</label>
+        <label><input type="checkbox" value="Com alface"> Com alface</label>
+        <label><input type="checkbox" value="Sem tomate"> Sem tomate</label>
+        <label><input type="checkbox" value="Com tomate"> Com tomate</label>
+        <label><input type="checkbox" value="Molho à parte"> Molho à parte</label>
+      </div>
+      <textarea placeholder="Outras Observações (ex.: tirar pimenta, ponto da carne...)"></textarea>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Sacolé (Geladinhos)" data-price="3.00">
+      <img src="geladinho.jpeg" alt="Sacolé (Geladinhos)" />
+      <h2>Sacolé (Geladinhos)</h2>
+      <p>Sabores: Ninho trufado, Morango...</p>
+      <span>R$ 3,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Abacaxi"> Abacaxi</label>
+        <label><input type="checkbox" value="Uva"> Uva</label>
+        <label><input type="checkbox" value="Abacate"> Abacate</label>
+        <label><input type="checkbox" value="Acerola"> Acerola</label>
+        <label><input type="checkbox" value="Ninho Trufado"> Ninho Trufado</label>
+        <label><input type="checkbox" value="Maracujina"> Maracujina</label>
+        <label><input type="checkbox" value="Limão"> Limão</label>
+        <label><input type="checkbox" value="Laranja"> Laranja</label>
+        <label><input type="checkbox" value="Cocolate"> Cocolate</label>
+      </div>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Sorvete 250ml" data-price="5.00">
+      <img src="sorvete250ml.jpeg" alt="Sorvete 250ml" />
+      <h2>Sorvete 250ml 🍦</h2>
+      <p>Sabores: Ninho trufado, Morango...</p>
+      <span>R$ 5,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Abacaxi"> Abacaxi</label>
+        <label><input type="checkbox" value="Uva"> Uva</label>
+        <label><input type="checkbox" value="Abacate"> Abacate</label>
+        <label><input type="checkbox" value="Acerola"> Acerola</label>
+        <label><input type="checkbox" value="Ninho Trufado"> Ninho Trufado</label>
+        <label><input type="checkbox" value="Maracujina"> Maracujina</label>
+        <label><input type="checkbox" value="Limão"> Limão</label>
+        <label><input type="checkbox" value="Laranja"> Laranja</label>
+        <label><input type="checkbox" value="Cocolate"> Cocolate</label>
+      </div>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Sorvete 150ml" data-price="3.00">
+      <img src="sorverete150ml.jpeg" alt="Sorvete 150ml" />
+      <h2>Sorvete 150ml 🍦🍨</h2>
+      <p>Sabores: Ninho trufado, Morango...</p>
+      <span>R$ 3,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Abacaxi"> Abacaxi</label>
+        <label><input type="checkbox" value="Uva"> Uva</label>
+        <label><input type="checkbox" value="Abacate"> Abacate</label>
+        <label><input type="checkbox" value="Acerola"> Acerola</label>
+        <label><input type="checkbox" value="Ninho Trufado"> Ninho Trufado</label>
+        <label><input type="checkbox" value="Maracujina"> Maracujina</label>
+        <label><input type="checkbox" value="Limão"> Limão</label>
+        <label><input type="checkbox" value="Laranja"> Laranja</label>
+        <label><input type="checkbox" value="Cocolate"> Cocolate</label>
+      </div>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="item" data-name="Açaí 330ml" data-price="12.00">
+      <img src="acai.jpeg" alt="Açaí 350ml" />
+      <h2>Açaí 350ml</h2>
+      <p>Com banana, Ninho trufado...</p>
+      <span>R$ 12,00</span>
+      <div class="quantity-controls">
+        <button class="qty-btn minus">-</button>
+        <input type="number" class="qty-input" min="1" value="1" />
+        <button class="qty-btn plus">+</button>
+      </div>
+      <div class="opcoes">
+        <label><input type="checkbox" value="Açaí com Banana"> Açaí com Banana</label>
+        <label><input type="checkbox" value="Açaí Puro"> Açaí Puro</label>
+        <label><input type="checkbox" value="Açaí com Ninho Trufado"> Açaí com Ninho Trufado</label>
+      </div>
+      <div class="Complementos">
+        <label><input type="checkbox" value="Com Leite Ninho"> Com Leite Ninho</label>
+        <label><input type="checkbox" value="Sem Leite Ninho"> Sem Leite Ninho</label>
+        <label><input type="checkbox" value="Com Leite Condesado"> Com Leite Condesado</label>
+        <label><input type="checkbox" value="Sem Leite Condesado"> Sem Leite Condesado</label>
+        <label><input type="checkbox" value="Com Bolacha Recheada"> Com Bolacha Recheada</label>
+        <label><input type="checkbox" value="Sem Bolacha Recheada"> Sem Bolacha Recheada</label>
+        <label><input type="checkbox" value="Com Bolacha Oreo"> Com Bolacha Oreo</label>
+        <label><input type="checkbox" value="Sem Bolacha Oreo"> Sem Bolacha Oreo</label>
+        <label><input type="checkbox" value="Com Bolinhas Doces"> Com Bolinhas Doces</label>
+        <label><input type="checkbox" value="Sem Balinhas Doce"> Sem Balinhas Doce</label>
+      </div>
+      <div class="Corberturas">
+        <label><input type="checkbox" value="Chocolate"> Chocolate</label>
+        <label><input type="checkbox" value="Morango"> Morango</label>
+      </div>
+      <textarea placeholder="Outras Observações (ex.: Quero com recheios de...)"></textarea>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </section>
+
+  </main>
+
+  <!-- Carrinho -->
+  <aside id="cart">
+    <h2>Seu Carrinho 🛒</h2>
+    <div id="cart-items"></div>
+    <div id="cart-total"></div>
+    <button id="finalize-order" style="display:none;">Finalizar Pedido no WhatsApp</button>
+  </aside>
+
+  <!-- Botão Carrinho -->
+  <div id="cart-button" title="Abrir Carrinho">
+    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Carrinho">
+    <span id="cart-count">0</span>
+  </div>
+
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5577999192015" target="_blank" id="whatsapp-float" title="WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+  </a>
+
+  <script src="script.js"></script>
+<style>
+  body {
+    background: url(fundo.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #fff8f0;
+  }
+</style>
+
+</body>
+</html>
