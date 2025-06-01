@@ -299,4 +299,83 @@ header {
   padding: 100px 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+/* =========================
+   Responsividade para celular
+   ========================= */
+@media (max-width: 600px) {
+
+  header {
+    padding: 50px 10px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .menu {
+    gap: 15px;
+    padding: 20px 10px;
+  }
+
+  .item {
+    width: 95%;
+    max-width: 320px;
+    padding: 15px;
+  }
+
+  .item h2 {
+    font-size: 1.1em;
+  }
+
+  .item span {
+    font-size: 1.1em;
+  }
+
+  .add-to-cart {
+    padding: 10px;
+    font-size: 0.95em;
+  }
+
+  .quantity-controls {
+    gap: 8px;
+  }
+
+  .qty-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+  }
+
+  .qty-input {
+    width: 40px;
+    font-size: 14px;
+  }
+
+  #cart {
+    width: 90%;
+    right: 5%;
+    max-height: 80vh;
+  }
+
+  #whatsapp-float, #cart-button {
+    width: 55px;
+    height: 55px;
+  }
+
+  #whatsapp-float img, #cart-button img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+  }
+}
+
 
